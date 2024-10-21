@@ -1,7 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Cachorro cachorro = new Cachorro("T-Rex");
-        cachorro.dormir();
-        cachorro.fazerSom();
+        Carro carro = new Carro();
+        carro.acelerar();
+        carro.frear();
+
+        System.out.println("------------------------");
+
+        Moto moto = new Moto();
+        moto.acelerar();
+        moto.frear();
+        moto.dandoGrau();
     }
 }
