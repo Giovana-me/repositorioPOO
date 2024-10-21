@@ -1,15 +1,18 @@
-public class Animal {
-    private int numeroPatas;
-    private String genero;
-    private float idadeMeses;
+abstract class Animal {
+    private String nome;
 
-    public Animal (int numeroPatas, String genero, float idadeMeses){
-        this.numeroPatas = numeroPatas;
-        this.genero = genero;
-        this.idadeMeses = idadeMeses;
+    public Animal (String nome) {
+        this.nome = nome;
     }
 
-    public void comer(){
-        System.out.println("O animal está comendo agora...");
+    public String getNome() {
+        return nome;
     }
+
+    public abstract void fazerSom();
+
+    public void dormir() {
+        System.out.println(nome + " está dormindo.");
+    }
+
 }
